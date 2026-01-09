@@ -6,9 +6,13 @@ public class Main {
         gretl.belle();
         gretl.apportiere("Ball");
 
+        System.out.println("Anzahl Beine Gretl: " + gretl.getAnzahlBeine());
+        gretl.setAnzahlBeine(-6);
+        System.out.println("Anzahl Beine Gretl: " + gretl.getAnzahlBeine());
+
         // ------------------
 
-        Hund fiffi = new Hund(3, "braun", "Pinscher", "Fiffi");
+        Hund fiffi = new Hund(300, "braun", "Pinscher", "Fiffi");
 
         fiffi.beschreibeDichSelbst();
         fiffi.belle();

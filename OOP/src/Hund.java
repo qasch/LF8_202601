@@ -1,9 +1,9 @@
 public class Hund {
     // Eigenschaften / Attribute
-    int anzahlBeine;
-    String farbe;
-    String rasse;
-    String name;
+    private int anzahlBeine;
+    private String farbe;
+    private String rasse;
+    private String name;
 
     // Standard - Konstruktor / Parameterloser Konstruktor
     public Hund() {
@@ -15,7 +15,7 @@ public class Hund {
         // this is eine Referenz auf die Klasse an sich
         // wir geben damit an, dass wir dass z.B. Klassenattribut farbe meinen
         // und es so vom Parameter farbe unterscheiden
-        this.anzahlBeine = anzahlBeine;
+        this.setAnzahlBeine(anzahlBeine);
         this.farbe = farbe;
         this.rasse = rasse;
         this.name = name;
@@ -26,6 +26,22 @@ public class Hund {
         this.farbe = farbe;
         this.rasse = rasse;
         this.name = name;
+    }
+
+    // Getter und Setter
+
+
+    // Getter
+    public int getAnzahlBeine() {
+        return this.anzahlBeine;
+    }
+    // Setter
+    public void setAnzahlBeine(int anzahlBeine) {
+        if (anzahlBeine <= 4 && anzahlBeine >= 0) {
+            this.anzahlBeine = anzahlBeine;
+        } else {
+            this.anzahlBeine = 4;
+        }
     }
 
     // Fähigkeiten / Methoden
