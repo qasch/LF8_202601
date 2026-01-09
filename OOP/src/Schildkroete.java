@@ -10,4 +10,10 @@ public class Schildkroete extends Tier{
     public void gibLaut(){
         System.out.println("höhöhö");
     }
+
+    @Override
+    void beschreibeDichSelbst(){
+        super.beschreibeDichSelbst();
+        System.out.println("Hat unsere Schildkroete einen Panzer? " + this.hatPanzer);
+    }
 }

@@ -30,7 +30,7 @@ public abstract class Tier {
         System.out.print("Welche Art ist unser Tier? ");
         System.out.println(this.art);
 
-        System.out.print("Welche Farbe hat unser Tier?");
+        System.out.print("Welche Farbe hat unser Tier? ");
         System.out.println(this.farbe);
     }
 }

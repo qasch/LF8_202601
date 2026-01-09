@@ -52,4 +52,11 @@ public class Hund extends Tier {
         System.out.println("Hund bringt " + teil + " zurück");
     }
 
+    void beschreibeDichSelbst(){
+        super.beschreibeDichSelbst();
+
+        System.out.print("Welche Rasse ist unser Hund?");
+        System.out.println(this.rasse);
+
+    }
 }
