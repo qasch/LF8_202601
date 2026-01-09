@@ -1,6 +1,6 @@
 public class Main {
     static void main(String[] args) {
-        Hund gretl = new Hund(4, "schwarz", "Labrador", "Grelt");
+        Hund gretl = new Hund(4, "schwarz", "Labrador", "Gretl");
 
         gretl.beschreibeDichSelbst();
         gretl.belle();
@@ -14,8 +14,9 @@ public class Main {
         fiffi.belle();
         fiffi.apportiere("Stock");
 
-        Hund bello = new Hund();
+        Hund bello = new Hund("grau", "Dackel", "Bello");
         bello.beschreibeDichSelbst();
+        bello.belle("Wiff Wiff");
 
     }
 }

@@ -9,9 +9,20 @@ public class Hund {
     public Hund() {
 
     }
-
+    // Ein Konstruktor ist dafür da, ein neu erzeugtes Objekt in einen sinnvollen
+    // Ausgangszustand zu versetzen
     public Hund(int anzahlBeine, String farbe, String rasse, String name) {
+        // this is eine Referenz auf die Klasse an sich
+        // wir geben damit an, dass wir dass z.B. Klassenattribut farbe meinen
+        // und es so vom Parameter farbe unterscheiden
         this.anzahlBeine = anzahlBeine;
+        this.farbe = farbe;
+        this.rasse = rasse;
+        this.name = name;
+    }
+
+    public Hund(String farbe, String rasse, String name) {
+        this.anzahlBeine = 4;
         this.farbe = farbe;
         this.rasse = rasse;
         this.name = name;
@@ -20,6 +31,10 @@ public class Hund {
     // Fähigkeiten / Methoden
     void belle() {
         System.out.println("Wuff Wuff");
+    }
+
+    void belle(String laut) {
+        System.out.println(laut);
     }
 
     void apportiere(String teil) {
