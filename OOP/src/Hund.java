@@ -1,9 +1,6 @@
-public class Hund {
+public class Hund extends Tier {
     // Eigenschaften / Attribute
-    private int anzahlBeine;
-    private String farbe;
     private String rasse;
-    private String name;
 
     // Standard - Konstruktor / Parameterloser Konstruktor
     public Hund() {
@@ -21,12 +18,12 @@ public class Hund {
         this.name = name;
     }
 
-    public Hund(String farbe, String rasse, String name) {
-        this.anzahlBeine = 4;
-        this.farbe = farbe;
-        this.rasse = rasse;
-        this.name = name;
-    }
+    //public Hund(String farbe, String rasse, String name) {
+    //    this.farbe = farbe;
+    //    this.rasse = rasse;
+    //    this.name = name;
+    //    this.anzahlBeine = 4;
+    //}
 
     // Getter und Setter
 
@@ -45,29 +42,14 @@ public class Hund {
     }
 
     // Fähigkeiten / Methoden
-    void belle() {
+    @Override
+    public void gibLaut() {
         System.out.println("Wuff Wuff");
     }
 
-    void belle(String laut) {
-        System.out.println(laut);
-    }
 
     void apportiere(String teil) {
         System.out.println("Hund bringt " + teil + " zurück");
     }
 
-    void beschreibeDichSelbst(){
-        System.out.println();
-        System.out.println("------- " + this.name + " -------");
-
-        System.out.print("Wie viele Beine hat unser Tier? ");
-        System.out.println(this.anzahlBeine);
-
-        System.out.print("Welche Rasse ist unser Tier? ");
-        System.out.println(this.rasse);
-
-        System.out.print("Welche Farbe hat unser Tier?");
-        System.out.println(this.farbe);
-    }
 }
